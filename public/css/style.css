@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-image: url(https://ogrforum.ogaugerr.com/fileSendAction/fcType/0/fcOid/91673115809534972/filePointer/91673115809535186/fodoid/91673115809535180/imageType/LARGE/inlineImage/true/neon%2520plain%2520rolling.gif);
+    /*background-image: url(imagen1.PNG);*/
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.opciones{
+    width: 100vw;
+    height: 4vh;
+    background-color: brown;
+    display: flex;
+    
+}
+.opcionesBotones{
+    width: fit-content;
+    height: 2em;
+    align-self: center;
+}
+.contenedorImagenHorizonte{
+    display: flex;
+    justify-content:space-around ;
+}
+.imagenHorizonte{
+    float: inline-start;
+}
+.contenedor_timer{
+    width: 25rem;
+    position: fixed;
+    display: flex;
+    top: 10px; /* Ajusta la posición vertical del elemento según sea necesario */
+    left: 10px; /* */
+    flex-wrap: nowrap;
+}
+.numeroVidas, .score{
+    width: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+.numeroVidas p, .contenedor_timer p{
+    width: fit-content;
+    border: 0;
+    margin: 0;
+}
+.poderes{
+    display: flex;
+    position: fixed;
+    top: 7vh;
+    left: 8em;
+    width: 100%;
+    height: 165px;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.6;
+    opacity: 0;
+    transition: opacity 0.5s; /* Transición de 0.5 segundos */
+}
+.aparecer{
+    opacity: 1;
+}
+.corazoncito{
+   width: 15em;
+   background-image: url("../assets/Corazon.png");
+   background-repeat: no-repeat;
+}
+.voltear{
+    width: 15em;
+    background-image: url("../assets/voltear.PNG");
+    background-repeat: no-repeat;
+}
+.saltar{
+    width: 15em;
+    background-image: url("../assets/arriba.png");
+    background-repeat: no-repeat;
+}
