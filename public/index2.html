@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego infinito</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="/node_modules/dat.gui/build/dat.gui.min.js"></script>
+
+    
+    <audio src="assets/two_320kbps.mp3" id="musica" loop></audio>
+    <audio src="assets/y2mate.com - One_320kbps.mp3" id="musica2" loop></audio>
+    <audio src="assets/run2 effect.mp3" id="acelerar"></audio>
+    <audio src="assets/Jump sound effect 1_320kbps.mp3"id="salto"></audio>
+    <audio src="assets/Electric Explosion Sound Effect_320kbps.mp3"id="choque"></audio>
+    <audio src="assets/perdiste 1.mp3" id="perdio1"></audio>
+
+</head>
+<body>
+    <!-- 
+    <header>
+        <section class="opciones">
+                <button type="button" class="btn btn-success boton_musica opcionesBotones">Musica</button>            
+        </section>
+    </header>
+    -->
+    <main>
+        <section class="contenedorImagenHorizonte">
+            <!--<img src="https://ogrforum.ogaugerr.com/fileSendAction/fcType/0/fcOid/91673115809534972/filePointer/91673115809535186/fodoid/91673115809535180/imageType/LARGE/inlineImage/true/neon%2520plain%2520rolling.gif" alt="" class="imagenHorizonte"> -->
+            <!--<img src="https://ogrforum.ogaugerr.com/fileSendAction/fcType/0/fcOid/91673115809534972/filePointer/91673115809535186/fodoid/91673115809535180/imageType/LARGE/inlineImage/true/neon%2520plain%2520rolling.gifimagen1.PNG" alt=""> -->
+        </section>
+
+          <script
+            async
+            src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+          ></script>
+          
+          <script type="importmap">
+            {
+              "imports": {
+                "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+              }
+            }
+          </script>
+          
+          <nav class="navbar navbar-light bg-light contenedor_timer">
+            <span class="navbar-brand mb-0 h1 timer">Tiempo transcurrido : </span>
+            <span class="navbar-brand mb-0 h1 numeroVidas"><p>vidas :</p><p class="numeroVidas_valor">0</p></span>
+            <span class="navbar-brand mb-0 h1 score"><p>puntaje : </p> <p class="puntaje">0</p> </span>
+          </nav>
+
+          <div class="container poderes">
+            <!--<div class="corazoncito"></div>
+            <div class="voltear"></div>
+            <div class="saltar"></div> -->
+          </div>
+
+    </main>
+
+    <script type="module" src="../index.js">
+            
+    </script>
+
+
+
+</body>
+</html>
