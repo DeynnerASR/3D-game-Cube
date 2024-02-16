@@ -279,6 +279,9 @@ function boxColission({ box1, box2 }){
                 
               enemies.forEach(enemy =>{
                 enemy.update(ground)
+                
+                enemy.rotation.x += speedRotation;
+                
                 if(
                     boxColission({
                         box1: cube,
